@@ -1,0 +1,16 @@
+---
+title: "Scribbles"
+listing:
+  contents: .
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+title-block-banner: false
+color: "red"
+author: ""
+date: ""
+date-modified: ""
+---

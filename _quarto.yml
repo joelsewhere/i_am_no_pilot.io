@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "i am no pilot"
+  navbar:
+    logo: static/orange-hat.png
+    pinned: true
+    search: false
+
+format:
+  html:
+    theme: 
+      light: united
+    css: styles.css
+    toc: true
+
+
+

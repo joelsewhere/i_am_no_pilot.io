@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/content/scribbles/index.html",
+    "items": []
+  },
+  {
+    "listing": "/content/poems/index.html",
+    "items": []
+  },
+  {
+    "listing": "/content/stories/index.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/content/poems/index.html",
+      "/content/scribbles/index.html",
+      "/content/stories/index.html"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "listingMap": {
+    "content/scribbles/index.qmd": [
+      "."
+    ],
+    "content/poems/index.qmd": [
+      "."
+    ],
+    "content/stories/index.qmd": [
+      "."
+    ],
+    "index.qmd": [
+      "content/scribbles/*/index.qmd",
+      "content/stories/*/index.qmd",
+      "content/poems/*/index.qmd",
+      "content/scribbles/index.qmd",
+      "content/stories/index.qmd",
+      "content/poems/index.qmd"
+    ]
+  }
+}

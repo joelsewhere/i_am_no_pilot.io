@@ -1,0 +1,22 @@
+/* css styles */
+.navbar-logo {
+    height: 60px !important;
+    width: 70px !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    overflow:visible;
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration-color: white;
+}
+
+a:hover {
+    background: #ea5421;
+  }
+
+div.hover-card:hover {
+    background: #ea5421;  
+}

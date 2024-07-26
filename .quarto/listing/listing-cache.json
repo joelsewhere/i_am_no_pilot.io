@@ -3,18 +3,15 @@
     "content/scribbles/index.qmd": [
       "."
     ],
-    "content/poems/index.qmd": [
-      "."
-    ],
     "content/stories/index.qmd": [
       "."
     ],
+    "content/poems/index.qmd": [
+      "."
+    ],
     "index.qmd": [
-      "content/scribbles/*/index.qmd",
-      "content/stories/*/index.qmd",
-      "content/poems/*/index.qmd",
-      "content/scribbles/index.qmd",
       "content/stories/index.qmd",
+      "content/scribbles/index.qmd",
       "content/poems/index.qmd"
     ]
   }

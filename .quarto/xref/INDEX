@@ -13,5 +13,23 @@
   },
   "content/poems/index.qmd": {
     "index.html": "fae6ac3a"
+  },
+  "content/scribbles/olympic_games/index.qmd": {
+    "index.html": "2ba55434"
+  },
+  "content/scribbles/rock-river/index.qmd": {
+    "index.html": "d9a1e6f3"
+  },
+  "content/psalms/index.qmd": {
+    "index.html": "c8101954"
+  },
+  "content/spinners/ijbol/index.qmd": {
+    "index.html": "1e581870"
+  },
+  "content/spinners/index.qmd": {
+    "index.html": "8f64a22a"
+  },
+  "content/spinners/ijbol/button.qmd": {
+    "button.html": "43cbd6e8"
   }
 }

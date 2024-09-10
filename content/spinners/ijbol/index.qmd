@@ -1,0 +1,135 @@
+---
+title: "ijbol"
+title-block-style: none
+execute:
+  freeze: auto
+  echo: false
+---
+
+<center><h1>What does<code>ijbol</code>mean??</h1></center>
+
+```{python}
+import pandas as pd
+from pathlib import Path
+
+
+csv_files = Path('.').resolve().glob('*.csv')
+datasets = {}
+
+counts = pd.read_csv('unigram_freq.csv')
+
+for file in csv_files:
+
+    if 'unigram' in file.stem:
+        continue
+
+    frame = pd.read_csv(file)
+    stem = file.stem.split('-')
+    part, letter = stem[0], stem[2]
+    datasets[letter] = datasets.get(letter, {})
+    filter_frame = counts[counts['count'] > (100000 if letter == 'j' else 400000)]
+    filter1 = frame.iloc[:,0].isin(filter_frame.word.tolist())
+    filter2 = ~(frame.iloc[:,0].isin([
+        'jess',
+        'ofc',
+        'lak',
+        'jews'
+    ]))
+    datasets[letter][part] = frame[filter1 & filter2].iloc[:,0].replace('jist', 'just').replace('jis', 'just').replace('jes', 'just').replace('jamb', 'just').unique().tolist()
+
+
+
+
+```
+
+
+```{python}
+
+ojs_define(options=datasets)
+
+```
+
+
+
+```{ojs}
+
+{
+
+
+
+function choose(chooses) {
+  var index = Math.floor(Math.random() * chooses.length);
+  return chooses[index];
+}
+
+
+const div = html`
+
+    <center><div id="app">
+    <span>-------> <button id="button" style="background-color:#e95420; color:white;" type="button">???????</button> <-------</span>
+    <h2 id="ijbol"></h2>
+    </div></center>
+`
+
+const container = d3.select(div);
+const button = container.select('#button');
+const text = container.select('#ijbol');
+const color = d3.scaleOrdinal(d3.schemeDark2);
+
+button.on('click', () => {
+
+
+    var sentence = 'i'
+
+    const j = choose(['verbs', 'adverbs'])
+
+    console.log(sentence, j)
+
+    if (j == 'verbs') {
+
+        var b = 'conjunctions'
+        var o = 'adverbs'
+        var l = 'adverbs'
+        console.log(b, o, l)
+    } else {
+
+        var b = 'verbs'
+        var o = choose(['adjectives', 'nouns'])
+        var l = 'nouns'
+        console.log(b, o, l)
+    }
+
+    sentence += ` ${choose(options['j'][j])}`
+    sentence += ` ${choose(options['b'][b])}`
+    sentence += ` ${choose(options['o'][o])}`
+
+    if (o == 'nouns') {
+        sentence += "'s"
+    }
+    
+    sentence += ` ${choose(options['l'][l])}`
+
+    console.log(sentence)
+
+    text.html('')
+
+    text.selectAll(null)
+        .data(sentence.split(' '))
+        .enter()
+        .append('span')
+        .text(d => `${d} `)
+        .style('color', d => color(d))
+
+}
+)
+
+return container.node()
+}
+
+```
+
+<style>
+    #title-block-header {
+        display: none;
+    }
+</style>

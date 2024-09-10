@@ -1,0 +1,4 @@
+[submodule "content/scribbles/olympic_games/wikipedia_table_normalizer"]
+	path = content/scribbles/olympic_games/wikipedia_table_normalizer
+	url = https://github.com/joelsewhere/wikipedia_table_normalizer.git
+	branch = main

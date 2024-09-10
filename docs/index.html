@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto-inputc8492363ec390f7e – i am no pilot</title>
+<title>quarto-input98c60520285db8b0 – i am no pilot</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -224,10 +224,10 @@ window.Quarto = {
     <div class="grid quarto-listing-cols-1" style="width:100%;">
       
       <div class="hover-overlay" style="max-width: 80rem;">
-        <a href="./content/poems/index.html">
+        <a href="./content/stories/index.html">
           <div class="h-100">
-            <div class="hover-card" style="width: 100%; background: purple; padding:0;">
-                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">Poems</h4>
+            <div class="hover-card" style="width: 100%; background: green; padding:0;">
+                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">stories</h4>
             </div>
             </div>
         </a>
@@ -237,17 +237,27 @@ window.Quarto = {
         <a href="./content/scribbles/index.html">
           <div class="h-100">
             <div class="hover-card" style="width: 100%; background: red; padding:0;">
-                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">Scribbles</h4>
+                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">scribbles</h4>
             </div>
             </div>
         </a>
       </div>
       
       <div class="hover-overlay" style="max-width: 80rem;">
-        <a href="./content/stories/index.html">
+        <a href="./content/psalms/index.html">
           <div class="h-100">
-            <div class="hover-card" style="width: 100%; background: green; padding:0;">
-                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">Stories</h4>
+            <div class="hover-card" style="width: 100%; background: purple; padding:0;">
+                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">psalms</h4>
+            </div>
+            </div>
+        </a>
+      </div>
+      
+      <div class="hover-overlay" style="max-width: 80rem;">
+        <a href="./content/spinners/index.html">
+          <div class="h-100">
+            <div class="hover-card" style="width: 100%; background: black; padding:0;">
+                <h4 style="font-size: 20px; text-align:center; color: white; margin:0; padding-top:3%; padding-bottom:3%;">spinners</h4>
             </div>
             </div>
         </a>
@@ -358,7 +368,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/joelsewhere\.github\.io\/i_am_no_pilot\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

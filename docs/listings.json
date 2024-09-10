@@ -1,11 +1,20 @@
 [
   {
-    "listing": "/content/poems/index.html",
+    "listing": "/content/spinners/index.html",
+    "items": [
+      "/content/spinners/ijbol/index.html"
+    ]
+  },
+  {
+    "listing": "/content/psalms/index.html",
     "items": []
   },
   {
     "listing": "/content/scribbles/index.html",
-    "items": []
+    "items": [
+      "/content/scribbles/rock-river/index.html",
+      "/content/scribbles/olympic_games/index.html"
+    ]
   },
   {
     "listing": "/content/stories/index.html",
@@ -14,9 +23,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/content/poems/index.html",
+      "/content/stories/index.html",
       "/content/scribbles/index.html",
-      "/content/stories/index.html"
+      "/content/psalms/index.html",
+      "/content/spinners/index.html"
     ]
   }
 ]

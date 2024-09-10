@@ -7,7 +7,9 @@ listing:
     contents:
       - content/stories/index.qmd
       - content/scribbles/index.qmd
-      - content/poems/index.qmd
+      - content/psalms/index.qmd
+      - content/spinners/index.qmd
+    sort: false
 page-layout: custom
 sidebar: false
 toc: false

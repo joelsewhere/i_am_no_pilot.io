@@ -4,6 +4,13 @@ project:
 
 website:
   title: "i am no pilot"
+  site-url: https://iamnopilot.com
+  open-graph: true
+  twitter-card:
+    creator: "@i_am_no_pilot"
+    image: ./static/orange-hat.png
+    card-style: summary
+    
   navbar:
     logo: static/orange-hat.png
     pinned: true

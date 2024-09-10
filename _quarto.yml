@@ -9,7 +9,7 @@ website:
   open-graph: true
   twitter-card:
     creator: "@i_am_no_pilot"
-    image: ./static/orange-hat.png
+    image: /static/orange-hat.png
     card-style: summary
 
   navbar:
